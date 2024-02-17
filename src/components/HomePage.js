@@ -7,9 +7,9 @@ import './HomePage.css'
 const HomePage = ({ tasks }) => {
   return (
     <div>
-      <h1>𝓗𝓞𝓜𝓔 𝓟𝓐𝓖𝓔</h1>
+      <h1>ADD A TASK!</h1>
       <Link to="/add-task">
-        <button>Add Task</button>
+        <button>➕</button>
       </Link>
       <TaskList tasks={tasks} />
     </div>
