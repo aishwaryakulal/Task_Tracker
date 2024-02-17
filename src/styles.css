@@ -1,0 +1,68 @@
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #333461;
+  color: #f3f3f7;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #f3eeee;
+}
+
+/* Style for the Add Task button */
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style for the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #0c980c;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center; /* Center the text */
+}
+
+th {
+  background-color: #2f9399;
+  color: rgb(255, 254, 254);
+}
+
+/* Style for task cards */
+.card {
+  background-color: rgb(253, 248, 248);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 15px;
+}
