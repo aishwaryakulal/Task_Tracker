@@ -1,17 +1,14 @@
-
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-import TaskList from './TaskList';
 import './HomePage.css'
-const HomePage = ({ tasks }) => {
+
+const HomePage = () => {
   return (
-    <div>
-      <h1>ADD A TASK!</h1>
+    <div className="home-container">
+      <h1 className="add-task-heading">Add a Task!</h1>
       <Link to="/add-task">
-        <button>➕</button>
+        <button className="add-task-button">+</button>
       </Link>
-      <TaskList tasks={tasks} />
     </div>
   );
 };

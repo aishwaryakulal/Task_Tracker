@@ -1,7 +1,7 @@
-
+/* AddTaskPage.css */
 
 .add-task-card {
-  background-color: #fff;
+  background-color: #ece4e4;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   padding: 20px;
@@ -13,7 +13,6 @@
 .add-task-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .add-task-container {
@@ -25,7 +24,7 @@
 }
 
 .add-task-heading {
-  color: #4caf50;
+  color: #242791;
   font-family: 'Fantasy', sans-serif;
   margin-bottom: 20px;
 }
@@ -40,10 +39,28 @@
 }
 
 .add-task-button {
-  background-color: #4caf50;
+  background-color: #21458d;
   color: white;
   padding: 15px 30px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+/* AddTaskPage.css */
+
+.tasks-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.tasks-table th, .tasks-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.tasks-table th {
+  background-color: #3513ae;
+  color: white;
 }
