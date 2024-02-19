@@ -9,11 +9,12 @@
 }
 
 .add-task-heading {
-  color: #23679e; /* Blue color */
+  color: #f5883e; /* Blue color */
+  margin-top: 90px;
 }
 
 .add-task-button {
-  background-color: #2196f3; /* Blue color */
+  background-color: #cf7b14; /* Blue color */
   color: white;
   padding: 10px 20px;
   border: none;
@@ -23,5 +24,5 @@
 }
 
 .add-task-button:hover {
-  background-color: #1565c0; /* Darker blue on hover */
+  background-color: #0a2e57; /* Darker blue on hover */
 }

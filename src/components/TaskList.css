@@ -1,0 +1,35 @@
+/* TaskList.css */
+.task-list-container {
+    margin-top: 20px;
+  }
+  
+  .task-list-heading {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .tasks-table {
+    width: 150%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .tasks-table th,
+  .tasks-table td {
+    padding: 15px;
+    border: 1px solid #f9f7f3;
+  }
+  
+  .tasks-table th {
+    background-color: #f06e04; /* Light gray background for header */
+  }
+  
+  .tasks-table td {
+    background-color: #f3a44f; /* Light blue background for rows */
+  }
+  
+  /* Optional: Add hover effect on table rows */
+  .tasks-table tr:hover {
+    background-color: #f0c465; /* Lighter blue background on hover */
+  }
+  

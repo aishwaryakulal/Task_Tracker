@@ -3,7 +3,7 @@
 // import { useNavigate } from 'react-router-dom';
 // import './AddTaskPage.css';
 
-// const AddTaskPage = ({ addTask, tasks }) => {
+// const AddTaskPage = ({ addTask }) => {
 //   const navigate = useNavigate();
 //   const [taskName, setTaskName] = useState('');
 //   const [date, setDate] = useState('');
@@ -44,17 +44,22 @@
 //       <button onClick={handleSubmit} className="add-task-button">
 //         Submit
 //       </button>
+      
+//       {/* Back button to navigate to home page */}
+//       <button onClick={() => navigate('/')} className="add-task-button">
+//         Back to Home
+//       </button>
 //     </div>
 //   );
 // };
 
 // export default AddTaskPage;
-// AddTaskPage.js
+// AddTaskPage.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './AddTaskPage.css';
 
-const AddTaskPage = ({ addTask, tasks }) => {
+const AddTaskPage = ({ addTask }) => {
   const navigate = useNavigate();
   const [taskName, setTaskName] = useState('');
   const [date, setDate] = useState('');
@@ -95,29 +100,11 @@ const AddTaskPage = ({ addTask, tasks }) => {
       <button onClick={handleSubmit} className="add-task-button">
         Submit
       </button>
-
-      {/* Display TaskList below the form */}
-      {tasks.length > 0 && (
-        <div>
-          <h2 className="added-tasks-heading">Added Tasks</h2>
-          <table className="tasks-table">
-            <thead>
-              <tr>
-                <th>Task Name</th>
-                <th>Date</th>
-              </tr>
-            </thead>
-            <tbody>
-              {tasks.map((task, index) => (
-                <tr key={index}>
-                  <td>{task.taskName}</td>
-                  <td>{task.date}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      )}
+      
+      {/* Back button to navigate to home page */}
+      <button onClick={() => navigate('/')} className="back-to-home-button">
+        Back to Home
+      </button>
     </div>
   );
 };
