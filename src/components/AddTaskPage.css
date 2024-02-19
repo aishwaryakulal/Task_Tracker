@@ -1,19 +1,4 @@
-/* AddTaskPage.css
 
-.add-task-card {
-  background-color: #ece4e4;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  padding: 20px;
-  width: 300px;
-  margin: 0 auto;
-  margin-top: 50px;
-}
-
-.add-task-form {
-  display: flex;
-  flex-direction: column;
-}
 
 .add-task-container {
   display: flex;
@@ -21,66 +6,17 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+  color:white;
+  font-size: 20px;
 }
 
 .add-task-heading {
-  color: #ed6b20;
-  font-family: 'Fantasy', sans-serif;
+  color:#47ee22;
+  font-family: 'fantasy', sans-serif;
   margin-bottom: 20px;
-}
-
-.add-task-label {
-  margin-bottom: 20px;
-}
-
-.add-task-input {
-  padding: 8px;
-  margin-bottom: 20px;
-}
-
-.add-task-button {
-  background-color: #ecce83;
-  color: white;
-  padding: 15px 30px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
   
 }
 
-
-.tasks-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
-
-.tasks-table th, .tasks-table td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
-}
-
-.tasks-table th {
-  background-color: #3513ae;
-  color: white;
-} */
-/* AddTaskPage.css */
-
-.add-task-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
-.add-task-heading {
-  color: #e76c08;
-  font-family: 'Fantasy', sans-serif;
-  margin-bottom: 20px;
-}
-
 .add-task-label {
   margin-bottom: 20px;
 }
@@ -88,18 +24,22 @@
 .add-task-input {
   padding: 8px;
   margin-bottom: 20px;
+  color: beige;
+  font-size: medium;
 }
 
 .add-task-button, .back-to-home-button {
-  background-color: #ecce83;
+  background-color: #1f5b07;
   color: white;
   padding: 15px 30px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 20px;
+  font-weight: bolder;
 }
 
 .back-to-home-button {
-  background-color: #5cb85c; /* Green color for the back button */
+  font-size: large;
+  background-color: #047904; /* Green color for the back button */
 }

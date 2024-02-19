@@ -1,35 +1,57 @@
-/* TaskList.css */
+
+
+   *{
+    background-color: #151818c8; /* Grey background color */
+  }
 .task-list-container {
-    margin-top: 20px;
-  }
+  margin-top: 20px;
+}
+
+.task-list-heading {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: beige;
+
+}
+
+.tasks-table {
+  width: 100%; /* Adjusted to 100% */
+  border-collapse: collapse;
+  margin-top: 20px;
+  color: beige;
+  font-weight: bolder;
+  font-family: cursive;
+}
+
+.tasks-table th,
+.tasks-table td {
+  padding: 20px;
+  border: 3px solid #bed8f1;
+  text-align: left; /* Align content to the left */
+}
+
+.tasks-table th {
+  background-color: #10370b; /* Light gray background for header */
+}
+
+.tasks-table td {
   
-  .task-list-heading {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .tasks-table {
-    width: 150%;
-    border-collapse: collapse;
-    margin-top: 10px;
-  }
-  
-  .tasks-table th,
-  .tasks-table td {
-    padding: 15px;
-    border: 1px solid #f9f7f3;
-  }
-  
-  .tasks-table th {
-    background-color: #f06e04; /* Light gray background for header */
-  }
-  
-  .tasks-table td {
-    background-color: #f3a44f; /* Light blue background for rows */
-  }
-  
-  /* Optional: Add hover effect on table rows */
-  .tasks-table tr:hover {
-    background-color: #f0c465; /* Lighter blue background on hover */
-  }
-  
+  background-color: #288905; /* Light blue background for rows */
+}
+
+/* Optional: Add hover effect on table rows */
+.tasks-table tr:hover {
+  background-color: #04840a; /* Lighter blue background on hover */
+}
+
+.action-icons span {
+  margin-right: 10px; /* Add space between the icons */
+  cursor: pointer;
+  font-size: 30px;
+  color: beige;
+   /* Increase icon size */
+}
+.tasks-table input {
+  font-size: 20px; /* Increase font size for input fields */
+  color: beige; /* Set color to beige */
+}

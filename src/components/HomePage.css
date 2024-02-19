@@ -1,4 +1,9 @@
-/* HomePage.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Grey background color */
+}
 
 .home-container {
   display: flex;
@@ -9,20 +14,38 @@
 }
 
 .add-task-heading {
-  color: #f5883e; /* Blue color */
+  color: #47ee22; /* Blue color */
   margin-top: 90px;
 }
 
+.button-container {
+  display: flex;
+  gap: 20px; /* Add some space between buttons */
+  margin-top: 10px;
+}
+
 .add-task-button {
-  background-color: #cf7b14; /* Blue color */
+  background-color: #58c813; /* Blue color */
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 10px;
 }
 
 .add-task-button:hover {
-  background-color: #0a2e57; /* Darker blue on hover */
+  background-color: #104b8f; /* Darker blue on hover */
+}
+
+.clear-all-button {
+  background-color: red; /* Red color */
+  color: white; /* White text color */
+  padding: 15px 30px; /* Increase width and height */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.clear-all-button:hover {
+  background-color: darkred; /* Darker red on hover */
 }

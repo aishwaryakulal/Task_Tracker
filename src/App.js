@@ -5,11 +5,9 @@ import AddTaskPage from './components/AddTaskPage';
 import HomePage from './components/HomePage';
 
 const App = () => {
-  // Load tasks from localStorage on initial render
   const storedTasks = JSON.parse(localStorage.getItem('tasks')) || [];
   const [tasks, setTasks] = useState(storedTasks);
 
-  // Save tasks to localStorage whenever tasks are updated
   useEffect(() => {
     localStorage.setItem('tasks', JSON.stringify(tasks));
   }, [tasks]);
@@ -18,12 +16,27 @@ const App = () => {
     setTasks([...tasks, task]);
   };
 
+  const clearAllTasks = () => {
+    setTasks([]);
+  };
+  const editTask = (index, updatedTask) => {
+    const updatedTasks = [...tasks];
+    updatedTasks[index] = updatedTask;
+    setTasks(updatedTasks);
+  };
+
+  const deleteTask = (index) => {
+    const updatedTasks = [...tasks];
+    updatedTasks.splice(index, 1);
+    setTasks(updatedTasks);
+  };
+
   return (
     <Router>
       <Routes>
         <Route
           path="/"
-          element={<HomePage tasks={tasks} />}
+          element={<HomePage tasks={tasks} clearAllTasks={clearAllTasks} editTask={editTask} deleteTask={deleteTask} />}
         />
         <Route
           path="/addtask"
@@ -35,3 +48,4 @@ const App = () => {
 };
 
 export default App;
+
