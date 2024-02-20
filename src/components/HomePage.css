@@ -49,3 +49,19 @@ body {
 .clear-all-button:hover {
   background-color: darkred; /* Darker red on hover */
 }
+/* Add the following styles to your existing CSS file */
+.search-container {
+  margin-bottom: 10px;
+}
+
+.search-input {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: #f0f0f0;
+  font-weight: bold;
+}
+
+/* Additional styling for the search bar, adjust as needed */
